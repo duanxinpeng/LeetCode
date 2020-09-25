@@ -660,7 +660,7 @@ public class Pinduoduo {
                     m--;
                     k -= (count + 1); // ??把'b'剪掉了
                 }
-            } else if (n == 0 && m > 0) {
+            } else if (n == 0 && m > 0) { // 不能写成 if(m >0), 当n大于零的时候，不能按照这个方式求解，会超时！
                 builder.append('b');
                 m--;
                 k--;
